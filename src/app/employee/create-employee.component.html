@@ -1,4 +1,4 @@
-<form #employeeForm="ngForm">    <!-- #employeeForm--template reference from -->
+<form #employeeForm="ngForm"  (ngSubmit)="saveEmployee(employeeForm)">    <!-- #employeeForm--template reference from -->
     <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title"> Create Emloyee</h3>

@@ -6,12 +6,12 @@
         <div class="panel-body">
             <div class="form-group"> 
                <label for="fullname">Full Name </label>
-               <input type="text" class="form-control" id="fullname"/>
+               <input type="text" name="fn" [(ngModel)]="fullName" class="form-control" id="fullname"/>
             </div>
     
             <div class="form-group"> 
                 <label for="email">email </label>
-                <input type="text" class="form-control" id="email"/>
+                <input type="text" class="form-control" name="mail" [(ngModel)]="email" id="email"/>
              </div>
         </div>
         <div class="panel-footer">
@@ -21,4 +21,4 @@
     
 </form>
 
-{{employeeForm.value |json}}
+Angular generated forms model:{{employeeForm.value |json}}
